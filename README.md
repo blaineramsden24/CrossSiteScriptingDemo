@@ -1,3 +1,3 @@
 # CrossSiteScriptingDemo
 
-We're fuckedß
+We're fucked
