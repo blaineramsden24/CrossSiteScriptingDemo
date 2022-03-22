@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>Cross Site Scripting Demo</h1>
+        <h2>Demo 1</h2>
+        <div>
+            <from>
+                <label for="uName"> Username : </label><br>
+                <input type="text" id = "uName" name="Uname"><br>
+                <label for="Comment"> Comment : </label><br>
+                <input type="text" id = "Comment" name="Comment"><br>        
+                <button type="button" id = "button">Submit</button>
+                <script>
+                    function test(){
+                        let header = document.querySelector("div");
+                        header.innerText = document.getElementById('Comment').value;
+                    }
+                    let btn = document.getElementById("button");
+                    btn.addEventListener('click', event => { test();});
+                </script>
+            </form>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
