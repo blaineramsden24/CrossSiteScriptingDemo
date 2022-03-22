@@ -1,3 +1,2 @@
 # CrossSiteScriptingDemo
 
-We're fucked
